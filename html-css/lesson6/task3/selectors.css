@@ -10,7 +10,7 @@
   background-color: grey;
 }
 
-[data-description|='even'] {
+[data-description*='even'] {
   background-color: grey;
 }
 
