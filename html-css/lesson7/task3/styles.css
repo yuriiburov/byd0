@@ -1,16 +1,17 @@
-.theory::first-letter {
+.theory span {
   font-size: 36px;
   margin-left: 16px;
   color: orange;
 }
 
-.theory::selection {
-  background-color: red;
-  color: white;
-}
-
 .theory::first-line {
   font-size: 24px;
+}
+
+.theory::selection,
+span::selection {
+  background-color: red;
+  color: white;
 }
 
 a::before {
