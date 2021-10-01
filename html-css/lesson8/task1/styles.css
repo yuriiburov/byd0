@@ -4,14 +4,15 @@ body {
 
 .rectangle1 {
   background-color: aquamarine;
+  box-sizing: content-box;
 }
 
 .rectangle2 {
   background-color: azure;
+  box-sizing: border-box;
 }
 
 .rectangle {
-  box-sizing: content-box;
   border: 8px solid black;
   margin: 16px;
   padding: 16px;
