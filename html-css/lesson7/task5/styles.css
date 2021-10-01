@@ -22,7 +22,7 @@ input {
   border: 3px solid red;
 }
 
-.hello {
+div > .hello {
   background-color: white;
 }
 
@@ -38,7 +38,7 @@ input[type='text'] {
   background-color: gray;
 }
 
-div:nth-child(3) > p {
+.bye {
   background-color: yellow;
 }
 
