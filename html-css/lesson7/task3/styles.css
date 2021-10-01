@@ -1,4 +1,4 @@
-.theory span {
+.theory::first-letter {
   font-size: 36px;
   margin-left: 16px;
   color: orange;
@@ -8,18 +8,17 @@
   font-size: 24px;
 }
 
-.theory::selection,
-span::selection {
+.theory::selection {
   background-color: red;
   color: white;
 }
 
 a::before {
-  content: '> ';
+  content: '>';
   color: green;
 }
 
 a::after {
-  content: '< ';
+  content: '<';
   color: green;
 }
