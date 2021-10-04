@@ -6,15 +6,16 @@
 section {
   background: aquamarine;
   padding: 16px;
-  box-sizing: border-box;
   float: left;
   width: 50%;
+  box-sizing: border-box;
 }
 
 footer {
-  height: 29px;
+  height: 30px;
   border: 2px solid black;
   clear: both;
+  box-sizing: border-box;
 }
 
 .red {
