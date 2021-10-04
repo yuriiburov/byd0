@@ -8,6 +8,7 @@ body {
   background-color: darkturquoise;
   height: 40px;
   top: 0px;
+  z-index: 1;
 }
 
 .nav-list {
@@ -25,6 +26,7 @@ body {
 
 .content {
   height: 5000px;
+  width: calc(100% / 1);
 }
 
 .head {
@@ -34,6 +36,7 @@ body {
   width: 200px;
   background-color: aquamarine;
   margin: 0 auto;
+  z-index: 0;
 }
 
 .ear {
