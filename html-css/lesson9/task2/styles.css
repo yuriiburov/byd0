@@ -12,17 +12,17 @@ section {
 }
 
 footer {
-  height: 30px;
+  height: 29px;
   border: 2px solid black;
   clear: both;
 }
 
 .red {
   background-color: red;
-  float: left;
+  float: right;
 }
 
 .green {
   background-color: green;
-  float: right;
+  float: left;
 }
