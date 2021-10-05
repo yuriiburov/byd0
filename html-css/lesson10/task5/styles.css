@@ -1,0 +1,13 @@
+header {
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+}
+
+.article {
+  margin: 8px;
+  padding: 16px;
+  background-color: bisque;
+}
