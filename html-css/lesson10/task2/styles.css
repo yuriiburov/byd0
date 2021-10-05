@@ -1,6 +1,5 @@
 .block {
   height: 100px;
-  flex-grow: 1;
   min-width: 100px;
 }
 
