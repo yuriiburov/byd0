@@ -4,13 +4,10 @@ section {
   font-size: 18px;
 }
 
-header {
+h1 {
+  text-transform: uppercase;
   text-align: center;
   margin-bottom: 20px;
-}
-
-h1 {
-  text-transform: capitalize;
 }
 
 p {
