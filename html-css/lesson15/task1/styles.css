@@ -1,12 +1,9 @@
-* {
-  box-sizing: border-box;
-}
-
 .main-img {
   margin: 50px auto;
   display: block;
-  width: 34.723%;
+  max-width: 100%;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
 .gallery {
