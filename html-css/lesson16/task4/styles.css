@@ -38,7 +38,7 @@ div input:required {
 }
 
 label {
-  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 button {
@@ -49,5 +49,4 @@ button {
   color: #fff;
   text-transform: uppercase;
   border-radius: 4px;
-  border: none;
 }
