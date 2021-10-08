@@ -24,7 +24,7 @@
         <input type="checkbox" name="like" checked readonly />
       </div>
       <div class="block-input">
-        <input type="color" name="favoriteColor" value="#ff7f50" />
+        <input type="color" name="favouriteColor" value="#ff7f50" />
       </div>
       <div class="block-input">
         <input type="date" name="birthDate" value="2021-01-02" />
@@ -37,7 +37,12 @@
         />
       </div>
       <div class="block-input">
-        <input type="email" placeholder="example@domain.com" required />
+        <input
+          type="email"
+          name="email"
+          placeholder="example@domain.com"
+          required
+        />
       </div>
       <div class="block-input">
         <input type="file" name="avatar" />
@@ -60,18 +65,20 @@
         <input type="password" name="password" value="secret" />
       </div>
       <div class="languages">
-        <input type="radio" name="language" value="html" />HTML
-        <input type="radio" name="language" value="css" checked />CSS
-        <input type="radio" name="language" value="javascript" />JavaScript
+        <input type="radio" name="language" value="html" /> HTML
+        <input type="radio" name="language" value="css" checked /> CSS
+        <input type="radio" name="language" value="javascript" /> JavaScript
       </div>
       <div class="block-input">
         <input type="range" name="learningProgress" value="30" />
       </div>
-      <select name="framework">
-        <option value="react">React</option>
-        <option value="jquery" selected>jQuery</option>
-        <option value="bootstrap">Bootstrap</option>
-      </select>
+      <div class="block-input">
+        <select name="framework">
+          <option value="react">React</option>
+          <option value="jquery" selected>jQuery</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+      </div>
       <div class="block-input">
         <input
           type="search"
