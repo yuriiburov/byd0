@@ -9,10 +9,6 @@ div {
 table {
   width: 500px;
   margin: 16px;
-  text-align: right;
-}
-tr {
-  line-height: 40px;
 }
 
 td,
@@ -20,7 +16,13 @@ th,
 table {
   border: thin solid #000;
   border-collapse: collapse;
+}
+
+th,
+td {
+  line-height: 40px;
   padding: 4px;
+  text-align: right;
 }
 
 tbody tr:nth-child(odd) {
