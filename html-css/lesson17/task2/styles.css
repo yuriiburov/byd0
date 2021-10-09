@@ -22,11 +22,12 @@ th,
 td {
   padding: 4px;
   text-align: right;
-  line-height: 30px;
+  line-height: 31px;
 }
 
 th {
   background-color: aqua;
+  line-height: 30px;
 }
 
 div {
