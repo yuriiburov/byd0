@@ -14,13 +14,13 @@ table {
 td,
 th,
 table {
-  border: thin solid #000;
+  border: 1px solid #000;
   border-collapse: collapse;
 }
 
 th,
 td {
-  line-height: 36px;
+  line-height: 31px;
   padding: 4px;
   text-align: right;
 }
