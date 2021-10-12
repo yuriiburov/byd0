@@ -24,7 +24,7 @@
   animation-name: moving;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
 }
 
 @keyframes moving {
