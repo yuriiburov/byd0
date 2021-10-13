@@ -10,6 +10,7 @@
 
 .spinner {
   margin: auto;
+  position: relative;
 }
 
 .spinner-text {
