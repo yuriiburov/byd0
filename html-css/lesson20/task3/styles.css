@@ -8,8 +8,11 @@
 }
 
 .spinner {
-  display: block;
+  display: flex;
   margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .spinner-text {
