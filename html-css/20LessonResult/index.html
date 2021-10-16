@@ -22,6 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andada+Pro&display=swap"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <link
       rel="stylesheet"
@@ -31,24 +35,200 @@
       referrerpolicy="no-referrer"
     />
     <!-- link to css -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
-    <header class="fixed-block">
+    <nav class="fixed-block">
       <h2 class="nav-title">Marsin'</h2>
       <ul class="navbar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Plans of the future</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about-us">About us</a></li>
+        <li><a href="#plans">Plans of the future</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
-      <div class="fixed-icons">
-        <a title="Lets fly!" href="#"><i class="fas fa-rocket"></i></a>
-        <a title="What do we take with us" href="#"
-          ><i class="fas fa-user-astronaut"></i
-        ></a>
+      <div class="nav-icons">
+        <a
+          title="Lets fly!"
+          href="https://en.wikipedia.org/wiki/Rocket"
+          target="_blank"
+        >
+          <i class="fas fa-rocket"></i>
+        </a>
+        <a
+          title="What do we take with us"
+          href="https://en.wikipedia.org/wiki/Astronaut"
+          target="_blank"
+        >
+          <i class="fas fa-user-astronaut"></i>
+        </a>
       </div>
+    </nav>
+    <header id="home" class="wrapper">
+      <div class="text-container">
+        <p class="header-text">We are making a great discoveries</p>
+        <h1 class="main-title">Marsin'</h1>
+      </div>
+      <a href="#forms"><div class="head-btn">Start</div></a>
     </header>
+    <article id="about-us" class="right-card big-card">
+      <p class="card-text">
+        In fact, rockets work more efficiently in the vacuum of space than in an
+        atmosphere. Multistage rockets are capable of attaining escape velocity
+        from Earth and therefore can achieve unlimited maximum altitude.
+        Compared with airbreathing engines, rockets are lightweight and powerful
+        and capable of generating large accelerations. To control their flight,
+        rockets rely on momentum, airfoils, auxiliary reaction engines,
+        gimballed thrust, momentum wheels, deflection of the exhaust stream,
+        propellant flow, spin, or gravity.
+      </p>
+      <img class="card-img" src="images/rocket.webp" alt="rocket" />
+    </article>
+    <article class="left-card big-card">
+      <img class="card-img" src="images/space.webp" alt="space" />
+      <p class="card-text">
+        "Astronaut" technically applies to all human space travelers regardless
+        of nationality or allegiance; however, astronauts fielded by Russia or
+        the Soviet Union are typically known instead as cosmonauts (from the
+        Russian "kosmos" (космос), meaning "space", also borrowed from Greek) in
+        order to distinguish them from American or otherwise NATO-oriented space
+        travellers. Comparatively recent developments in manned spaceflight made
+        by China have led to the rise of the term taikonaut (from the Mandarin
+        "tàikōng" (太空), meaning "space"), although its use is somewhat
+        informal and its origin is unclear. In Mainland China, the People's
+        Liberation Army Astronaut Corps astronauts and their foreign
+        counterparts are all officially called hángtiānyuán (航天员, meaning
+        "heaven navigator" or literally "heaven-sailing staff").
+      </p>
+    </article>
+    <section class="videos">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/TBikbn5XJhg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/vvbN-cWe0A0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      >
+      </iframe>
+    </section>
+    <section id="plans" class="small-cards">
+      <div class="photo-card">
+        <img
+          class="small-card_photo"
+          src="images/asrogif1.gif"
+          alt="astronaut"
+        />
+        <h3>Astronaut</h3>
+        <p class="small-card_additional">
+          is a person trained, equipped, and deployed by a human spaceflight
+          program to serve as a commander or crew member aboard a spacecraft.
+          Although generally reserved for professional space travelers, the
+          terms are sometimes applied to anyone who travels into space,
+          including scientists, politicians, journalists and tourists.
+        </p>
+        <div class="before-content"></div>
+      </div>
+      <div class="photo-card">
+        <img
+          class="small-card_photo"
+          src="images/asrogif2.gif"
+          alt="astronaut"
+        />
+        <h3>Definition</h3>
+        <p class="small-card_additional">
+          As of 17 November 2016, 552 people from 36 countries have reached 100
+          km (62 mi) or more in altitude, of whom 549 reached low Earth orbit or
+          beyond. Of these, 24 people have traveled beyond low Earth orbit,
+          either to lunar orbit, the lunar surface, or, in one case, a loop
+          around the Moon. Three of the 24—Jim Lovell, John Young and Eugene
+          Cernan—did so twice.
+        </p>
+        <div class="before-content"></div>
+      </div>
+      <div class="photo-card">
+        <img
+          class="small-card_photo"
+          src="images/asrogif3.gif"
+          alt="astronaut"
+        />
+        <h3>Parastronaut</h3>
+        <p class="small-card_additional">
+          For its 2022 Astronaut Group, ESA envisions recruiting an astronaut
+          with a physical disability, a category they called "parastronauts",
+          with the intention but not guarantee of spaceflight. The categories of
+          disability considered for the program were individuals with lower limb
+          deficiency (either through amputation or congenital), leg length
+          difference, or a short stature (less than 130 centimetres or 4 feet 3
+          inches)
+        </p>
+        <div class="before-content"></div>
+      </div>
+    </section>
+    <footer>
+      <aside id="forms">
+        <h3>Fly into space with us!</h3>
+        <form action="">
+          <div class="form-input">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="mail@example.com"
+              required
+            />
+          </div>
+          <div class="form-input">
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              checked
+              required
+            /><label for="male">Male</label>
+          </div>
+          <div class="form-input">
+            <input type="radio" name="gender" id="female" required />
+            <label for="female">Female</label>
+          </div>
+          <div class="form-input">
+            <input type="checkbox" name="adult" id="adult" required />
+            <label for="adult">I have 18+ years old</label>
+          </div>
+          <div class="form-submit">
+            <input type="submit" value="AGREE" required />
+          </div>
+        </form>
+      </aside>
+      <div class="contacts">
+        <section id="contacts">
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://uk-ua.facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://twitter.com/?lang=uk" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://www.snapchat.com/" target="_blank">
+            <i class="fab fa-snapchat"></i>
+          </a>
+        </section>
+        <h6>&copy;Marsin'</h6>
+      </div>
+    </footer>
   </body>
 </html>
