@@ -7,6 +7,13 @@ body {
   font-family: 'Andada Pro', serif;
 }
 
+/* changed .block-container */
+
+.block-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* navigation */
 
 .fixed-block {
@@ -74,6 +81,14 @@ i {
 .nav-icons a {
   width: 25px;
   margin: 20px;
+}
+
+.fa-caret-square-down {
+  display: none;
+}
+
+main {
+  display: none;
 }
 
 .nav-icons a:hover i {
