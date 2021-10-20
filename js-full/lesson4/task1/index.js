@@ -1,6 +1,9 @@
-let result = 1;
+let n = 100;
+let sum = 0;
 
-for (let num = 10; num < 20; num += 1) {
-  if (num % 2 !== 0) result *= num;
+while (n > 0) {
+  sum += n;
+  n -= 1;
 }
-console.log('Result: ' + result);
+
+console.log('Result: ' + sum);
