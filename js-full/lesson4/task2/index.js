@@ -1,13 +1,11 @@
-let m = 10;
-const n = 20;
+// put your code here
+const m = 2;
+const n = 8;
 let result = 1;
-
-while (m < n) {
-  if (m % 2 === 1) {
-    result *= m;
+for (let i = m; i <= n; i += 1) {
+  if (i % 2 === 1) {
+    result *= i;
   }
-  m += 1;
 }
 
 console.log(result);
-console.log(m);

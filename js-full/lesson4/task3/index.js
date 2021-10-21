@@ -1,15 +1,7 @@
-function run() {
-  var a = 0;
-
-  if (a == 1) {
-    return c;
+// put your code here
+for (let x = 1; x <= 5; x += 1) {
+  console.log(' \n=> ' + x + ' <=\n\n ');
+  for (let y = 1; y <= 10; y += 1) {
+    console.log(x + ' x ' + y + ' = ' + x * y);
   }
-
-  for (let i = 1; i < 10; i++) {
-    console.log(i);
-  }
-
-  return (d = a);
 }
-
-run();

@@ -1,7 +1,18 @@
-// put your code here
-for (let x = 1; x <= 5; x += 1) {
-  console.log(' \n=> ' + x + ' <=\n\n ');
-  for (let y = 1; y <= 10; y += 1) {
-    console.log(x + ' x ' + y + ' = ' + x * y);
+function run() {
+  const a = 0;
+  const c = 2;
+
+  if (a === 1) {
+    return c;
   }
+
+  for (let i = 1; i < 10; i += 1) {
+    console.log(i);
+    return i;
+  }
+  const d = a;
+
+  return d;
 }
+
+run();
