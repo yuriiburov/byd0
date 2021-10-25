@@ -40,7 +40,7 @@ main {
 .nav-list-item {
   background-color: #808080;
   line-height: 2em;
-  margin: 0 0.5em; /* 0.5em - 0 0.5em */
+  margin: 0.5em 0; /* 0 0.5em - 0.5em 0 */
   padding: 0 0.5em;
   overflow: hidden;
   white-space: nowrap;
@@ -67,7 +67,7 @@ main {
 }
 
 .section__header {
-  font-size: 4rem; /* 5-4 */
+  font-size: 5em; /* 5rem - 5em */
   text-align: center;
 }
 
