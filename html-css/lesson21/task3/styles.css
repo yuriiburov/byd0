@@ -54,11 +54,19 @@ main {
 
 .section {
   width: 60%;
-  padding: 0.5em;
+  padding: 0 0.5em;
   font-size: 1.25em;
-  line-height: 1.75em;
   display: flex;
   flex-direction: column;
+}
+
+.section p {
+  margin-top: 0;
+}
+
+.units-list {
+  line-height: 1.75em;
+  margin: 0;
 }
 
 .css-units {
