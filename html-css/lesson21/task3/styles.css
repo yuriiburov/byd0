@@ -69,6 +69,7 @@ main {
 .section__header {
   font-size: 5vw; /* 5rem - 5em */
   text-align: center;
+  line-height: normal;
 }
 
 .news {
