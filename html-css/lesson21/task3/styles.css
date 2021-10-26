@@ -3,28 +3,28 @@
 }
 
 html {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   color: #555;
   font-size: 16px;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 body {
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
   color: #fff;
+  font-size: xx-large; /*  */
   text-align: center;
   background-image: linear-gradient(60deg, red, orange);
   padding: 0.67em 0;
   margin: 0;
-}
-
-main {
-  display: flex;
-  flex: 1 0 auto;
 }
 
 .navigation {
@@ -54,19 +54,18 @@ main {
 
 .section {
   width: 60%;
-  padding: 0 0.5em;
+  padding: 0.5em;
   font-size: 1.25em;
-  display: flex;
-  flex-direction: column;
 }
 
-.section p {
-  margin-top: 0;
+.section__header {
+  font-size: 5vw;
+  text-align: center;
+  /* line-height: normal; */
 }
 
 .units-list {
   line-height: 1.75em;
-  margin: 0;
 }
 
 .css-units {
@@ -76,10 +75,9 @@ main {
   font-weight: 700;
 }
 
-.section__header {
-  font-size: 5vw; /* 5rem - 5em */
-  margin: 59.76px auto;
-  line-height: normal;
+main {
+  display: flex;
+  flex: 1 0 auto;
 }
 
 .news {
