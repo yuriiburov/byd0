@@ -40,7 +40,7 @@ button {
 .nav-list-link {
   color: #fff;
   text-decoration: none;
-  margin: 0.5em; /* nav-list-item */
+  margin-left: 0.5em; /* nav-list-item */
 }
 
 .nav-list-item {
