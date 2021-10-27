@@ -18,8 +18,8 @@ header {
 button {
   padding: 0;
   border: none;
-  background-color: transparent; /* */
-  margin: 0; /* */
+  background-color: transparent;
+  margin: 0;
   cursor: pointer;
 }
 
@@ -29,6 +29,7 @@ button {
 
 .navigation {
   display: none;
+  padding: 0;
 }
 
 .nav-list {
