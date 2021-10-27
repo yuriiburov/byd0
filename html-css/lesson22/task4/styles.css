@@ -40,13 +40,13 @@ button {
 .nav-list-link {
   color: #fff;
   text-decoration: none;
-  margin: 0.5em; /* nav-list-item */
 }
 
 .nav-list-item {
   background-color: #808080;
   height: 2em;
   padding: 0.5em;
+  margin: 0.5em; /* nav-list-item */
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
