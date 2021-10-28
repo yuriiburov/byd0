@@ -29,18 +29,18 @@ button {
 
 .navigation {
   display: none;
+  width: 20%;
+  padding: 0.5em;
 }
 
 .nav-list {
   list-style-type: none;
-  width: 20%;
-  padding: 0.5em;
+  padding: 0;
 }
 
 .nav-list-link {
   color: #fff;
   text-decoration: none;
-  margin-left: 0.5em; /* nav-list-item */
 }
 
 .nav-list-item {
@@ -50,6 +50,7 @@ button {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: 0.5em; /* nav-list-item */
 }
 
 @media screen and (min-width: 600px) {
