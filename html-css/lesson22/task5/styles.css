@@ -152,4 +152,8 @@ img {
   .news {
     width: 20%;
   }
+
+  footer {
+    margin-top: 100px;
+  }
 }
