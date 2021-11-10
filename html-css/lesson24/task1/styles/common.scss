@@ -1,0 +1,30 @@
+.action-button {
+  width: 160px;
+  height: 48px;
+  background-color: #3040c4;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 2px;
+}
+
+.card-description {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: $text-color-light-grey;
+  margin: 0;
+}
+
+.hide_desktop {
+  @include for-large-up {
+    display: none;
+  }
+}
+
+.hide_mobile {
+  @include for-large-down {
+    display: none;
+  }
+}

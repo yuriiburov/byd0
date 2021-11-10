@@ -1,0 +1,150 @@
+.inbox {
+  background-color: $color-orange-light;
+  padding: 50px 15px 48px 15px;
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    margin-top: 110px;
+    padding: 0 99px 0 193px;
+    flex-direction: row;
+  }
+
+  &__card {
+    @include for-large-up {
+      margin-right: 164px;
+      min-width: 425px;
+    }
+  }
+
+  &__illustrate {
+    width: 100%;
+    padding-bottom: 32px;
+
+    @include for-large-up {
+      padding-top: 142px;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__info {
+    display: none;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: $text-color-light-grey;
+    margin-top: 0;
+    margin-bottom: 101px;
+
+    @include for-large-up {
+      display: block;
+    }
+  }
+
+  &__container {
+    @include for-large-up {
+      width: 519px;
+      margin-top: 115px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    color: $text-color-orange;
+
+    @include for-large-up {
+      margin: 0 28px;
+    }
+  }
+
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 18px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.357143px;
+
+    @include for-large-up {
+      margin: 24px 26px 30px 26px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    @include for-large-up {
+      margin: 0 28px 30px 28px;
+    }
+  }
+
+  &__comment {
+    font-size: 20px;
+    line-height: 28px;
+    padding: 30px 20px 28px 20px;
+
+    @include for-large-up {
+      padding: 30px 30px 28px 30px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__user {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+
+    @include for-large-up {
+      margin-top: 44px;
+    }
+
+    &-icon {
+      margin-right: 11px;
+    }
+
+    &-name {
+      font-weight: 700;
+      color: $text-color-dark;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &-position {
+      color: $text-color-light-grey;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 400;
+      margin: 0;
+
+      @include for-large-up {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: flex-start;
+    padding: 0 20px 28px 20px;
+
+    @include for-large-up {
+      padding: 0 29px;
+    }
+  }
+
+  &__line {
+    height: 4px;
+    width: 100%;
+    background-color: $color-blue;
+  }
+}

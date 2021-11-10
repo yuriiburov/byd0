@@ -1,0 +1,100 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+
+  @include for-large-up {
+    align-items: center;
+    position: relative;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #3142c6;
+    margin: 39px 15px 0 15px;
+
+    @include for-large-up {
+      margin-top: 0;
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 29px 15px 32px 15px;
+
+    @include for-large-up {
+      text-align: center;
+      width: 750px;
+    }
+  }
+
+  &__user-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 15px;
+
+    @include for-large-up {
+      margin: 0 auto;
+    }
+  }
+
+  &__user-position {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 15px;
+    color: $text-color-light-grey;
+
+    @include for-large-up {
+      margin: 0 auto;
+    }
+  }
+
+  &__cycles {
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+
+    @include for-large-up {
+      margin-bottom: 66px;
+    }
+
+    &-navigate {
+      height: 12px;
+      width: 12px;
+      background-color: #2b292d33;
+      border-radius: 50%;
+      margin-right: 19.5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-active {
+        background-color: $text-color-blue;
+      }
+    }
+  }
+
+  &__scroll {
+    padding: 0 15px 50px 15px;
+    text-align: center;
+    max-width: 100%;
+
+    @include for-large-up {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      padding-right: 26px;
+    }
+  }
+
+  &__line {
+    height: 1px;
+    background-color: #00000019;
+    width: 100%;
+  }
+}

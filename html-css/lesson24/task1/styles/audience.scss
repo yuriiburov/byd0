@@ -1,0 +1,142 @@
+.audience {
+  background-color: rgb(0, 161, 198, 0.07);
+  padding: 50px 15px;
+
+  @include for-large-up {
+    padding: 108px 131px 110px 130px;
+  }
+
+  &__started {
+    display: flex;
+    flex-direction: column;
+
+    @include for-large-up {
+      width: 555px;
+      margin: auto;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 17px;
+    margin-bottom: 18px;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.357143px;
+
+    @include for-large-up {
+      margin-top: 24px;
+      margin-bottom: 30px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+
+    @include for-large-up {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+
+    @include for-large-up {
+      flex-direction: row;
+      margin: auto;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include for-large-up {
+      flex-direction: row;
+      margin-top: 111px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    @include for-large-up {
+      margin-right: 30px;
+      margin-bottom: 0;
+
+      &:nth-child(2) {
+        margin-right: 31px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $color-dark-blue;
+    }
+
+    &:hover .audience__card__info {
+      color: $text-color-white;
+    }
+
+    &-img {
+      padding-top: 22px;
+      margin: auto;
+    }
+
+    &-info {
+      font-size: 22px;
+      line-height: 28px;
+      text-align: center;
+      margin-top: 22px;
+      margin-bottom: 33px;
+    }
+  }
+}
+
+.audience__buttons > .audience__buttons-learn {
+  background-color: $color-white;
+  color: $text-color-black;
+}
+
+@include for-large-down {
+  .audience__buttons > .action-button {
+    width: 100%;
+  }
+
+  .audience__buttons > .audience__buttons-learn {
+    margin-top: 12px;
+    margin-bottom: 40px;
+  }
+}
+
+@include for-large-up {
+  .audience__buttons > .action-button {
+    margin-right: 10px;
+  }
+}

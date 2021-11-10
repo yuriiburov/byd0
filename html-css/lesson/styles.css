@@ -1,0 +1,21 @@
+body {
+  /* display: flex; */
+}
+
+div {
+  height: 100px;
+  background-color: #989;
+  margin: 8px;
+  display: flex;
+  flex-grow: 1;
+}
+
+section {
+  /* display: flex;
+  flex: 10; */
+}
+
+.news {
+  display: flex;
+  flex: 5;
+}
