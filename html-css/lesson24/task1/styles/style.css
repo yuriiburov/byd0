@@ -260,12 +260,13 @@
 .audience {
   background-color: rgba(0, 161, 198, 0.07);
   padding: 50px 15px;
+  width: 320px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1400px) {
   .audience {
     padding: 108px 131px 110px 130px;
     width: 1400px;
-    margin: 0 auto;
   }
 }
 .audience__started {
@@ -732,6 +733,7 @@
 @media screen and (min-width: 1400px) {
   .order__text {
     height: auto;
+    font-size: 26px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -1185,11 +1187,14 @@
 
 .top-section {
   background-color: #f3c6bd;
+  width: 320px;
+  margin: 0 auto;
 }
 @media screen and (min-width: 1400px) {
   .top-section {
     padding-top: 39px;
     background-color: #f3c6bd;
+    width: auto;
   }
 }
 
