@@ -2,7 +2,7 @@
   &-product {
     background-color: #141b1c;
     display: flex;
-    padding: 115px 132px;
+    padding: 60px 132px;
   }
 
   &-card {
@@ -34,7 +34,7 @@
       }
     }
 
-    &__title {
+    &__price {
       font-size: 35px;
       line-height: 43px;
       margin: 0;
@@ -59,6 +59,10 @@
       right: -30px;
       top: 31px;
     }
+
+    &__options-list {
+      margin: 0;
+    }
   }
 
   &__how-much {
@@ -76,13 +80,6 @@
     text-align: center;
     width: 327px;
     margin: 40px auto;
-  }
-
-  &__advantage {
-    margin: 0;
-    &-green {
-      list-style-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png');
-    }
   }
 
   &__profit {

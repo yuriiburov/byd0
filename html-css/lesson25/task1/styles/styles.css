@@ -13,7 +13,7 @@
 .price-product {
   background-color: #141b1c;
   display: flex;
-  padding: 115px 132px;
+  padding: 60px 132px;
 }
 .price-card {
   background-color: #334247;
@@ -40,7 +40,7 @@
 .price-card__head-blue {
   width: 163px;
 }
-.price-card__title {
+.price-card__price {
   font-size: 35px;
   line-height: 43px;
   margin: 0;
@@ -63,6 +63,9 @@
   right: -30px;
   top: 31px;
 }
+.price-card__options-list {
+  margin: 0;
+}
 .price__how-much {
   margin: 0;
   padding: 19px 0;
@@ -77,12 +80,6 @@
   text-align: center;
   width: 327px;
   margin: 40px auto;
-}
-.price__advantage {
-  margin: 0;
-}
-.price__advantage-green {
-  list-style-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png");
 }
 .price__profit {
   display: flex;
