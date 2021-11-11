@@ -34,7 +34,7 @@
       }
     }
 
-    &__price {
+    &__title {
       font-size: 35px;
       line-height: 43px;
       margin: 0;
@@ -44,6 +44,14 @@
       font-size: 20px;
       line-height: 24px;
       margin: 0;
+    }
+
+    &__price {
+      margin: 0;
+      padding: 19px 0;
+      font-size: 55px;
+      line-height: 67px;
+      text-align: center;
     }
 
     &__popular {
@@ -63,14 +71,6 @@
     &__options-list {
       margin: 0;
     }
-  }
-
-  &__how-much {
-    margin: 0;
-    padding: 19px 0;
-    font-size: 55px;
-    line-height: 67px;
-    text-align: center;
   }
 
   &__info {
@@ -99,6 +99,14 @@
 
       &-green {
         background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_green.png);
+      }
+
+      &-blue {
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_blue.png);
+      }
+
+      &-orange {
+        background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+25/verification-checkmark-symbol_orange.png);
       }
     }
 
