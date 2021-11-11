@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
 
+  @include for-large-up {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &-navigation {
     margin: 0;
     display: flex;
