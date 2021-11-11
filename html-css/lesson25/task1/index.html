@@ -11,63 +11,163 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- css -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Price Product</title>
   </head>
   <body>
     <div class="price-product">
       <section class="price-card">
-        <h2 class="price-card__title">Basic</h2>
-        <span class="price-card__subtitle">Website</span>
-        <div class="price__line green">
-          <h1 class="price__how-much">99&euro;</h1>
+        <div class="price-card__head price-card__head-green">
+          <h2 class="price-card__title">Basic</h2>
+          <span class="price-card__subtitle">Website</span>
         </div>
-        <p class="price__info">Simple website made in the world's most popular CMS system, Wordpress.</p>
-        <ul class="price__advantage">
-          <li class="price__advantage-item">Website in WordPress</li>
-          <li class="price__advantage-item">3 sub pages</li>
-          <li class="price__advantage-item">Theme customized</li>
-          <li class="price__advantage-item">Help and guidance</li>
-          <li class="price__advantage-item">System introduction</li>
-          <li class="price__advantage-item">2 weeks free support</li>
-        </ul>
+
+        <h1 class="price__how-much green">99&euro;</h1>
+
+        <p class="price__info">
+          Simple website made in the world's most popular CMS system, Wordpress.
+        </p>
+
+        <div class="price__advantage">
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">Website in WordPress</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">3 sub pages</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">Theme customized</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">Help and guidance</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">System introduction</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-green"></i>
+            <span class="price__profit-item">2 weeks free support</span>
+          </div>
+        </div>
+
         <button class="order-btn green">Order Now</button>
       </section>
 
       <section class="price-card">
-          <span class="price__card-popular">Popular</span>
-        <h2 class="price-card__title">Business</h2>
-        <span class="price-card__subtitle">Website</span>
+        <h6 class="price-card__popular">Popular</h6>
+
+        <div class="price-card__head price-card__head-blue">
+          <h2 class="price-card__title">Business</h2>
+          <span class="price-card__subtitle">Website</span>
+        </div>
+
         <div class="price__line blue">
           <h1 class="price__how-much">299&euro;</h1>
         </div>
-        <p class="price__info">Advanced website made in the world's most popular CMS system, Wordpress.</p>
-        <ul class="price__advantage">
-          <li class="price__advantage-item">Website in WordPress</li>
-          <li class="price__advantage-item">3-5 sub pages</li>
-          <li class="price__advantage-item">Theme customized</li>
-          <li class="price__advantage-item">Help and guidance</li>
-          <li class="price__advantage-item">System introduction</li>
-          <li class="price__advantage-item">1 mounth free support</li>
-        </ul>
+
+        <p class="price__info">
+          Advanced website made in the world's most popular CMS system,
+          Wordpress.
+        </p>
+
+        <div class="price__advantage">
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">Website in WordPress</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">3-5 sub pages</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">Theme customized</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">Help and guidance</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">System introduction</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-blue"></i>
+            <span class="price__profit-item">1 mounth free support</span>
+          </div>
+        </div>
+
         <button class="order-btn blue">Order Now</button>
+      </section>
 
       <section class="price-card">
-        <h2 class="price-card__title">Webshop</h2>
-        <span class="price-card__subtitle">Website</span>
-        <div class="price__line orange">
-          <h1 class="price__how-much">599&euro;</h1>
+        <div class="price-card__head price-card__head-orange">
+          <h2 class="price-card__title">Webshop</h2>
+          <span class="price-card__subtitle">Website</span>
         </div>
-        <p class="price__info">Your very own webshop made the world's most popular CMS system, Wordpress.</p>
-        <ul class="price__advantage">
-          <li class="price__advantage-item">Webshop in WordPress</li>
-          <li class="price__advantage-item">3-5 sub pages</li>
-          <li class="price__advantage-item">Theme customized</li>
-          <li class="price__advantage-item">Help and guidance</li>
-          <li class="price__advantage-item">System introduction</li>
-          <li class="price__advantage-item">1 mounth free support</li>
-        </ul>
+
+        <h1 class="price__how-much orange">599&euro;</h1>
+
+        <p class="price__info">
+          Your very own webshop made the world's most popular CMS system,
+          Wordpress.
+        </p>
+
+        <div class="price__advantage">
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">Website in WordPress</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">3-5 sub pages</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">Theme customized</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">Help and guidance</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">System introduction</span>
+          </div>
+
+          <div class="price__profit">
+            <i class="price__profit-img price__profit-img-orange"></i>
+            <span class="price__profit-item">1 mounth free support</span>
+          </div>
+        </div>
+
         <button class="order-btn orange">Order Now</button>
       </section>
     </div>

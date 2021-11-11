@@ -22,7 +22,7 @@
     @include for-large-up {
       width: 269.41px;
       margin-right: 121.59px;
-      margin-left: 224px; // 224px
+      margin-left: 224px;
       height: 296px;
     }
   }
@@ -43,7 +43,7 @@
 
     @include for-large-up {
       text-align: start;
-      margin-top: 33px; // 33px
+      margin-top: 33px;
       margin-bottom: 12px;
       height: 48px;
     }
@@ -57,7 +57,6 @@
 
     @include for-large-up {
       height: auto;
-      letter-spacing: 1px; // have to delete
     }
   }
 

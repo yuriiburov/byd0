@@ -1,0 +1,8 @@
+@import 'variables.scss';
+@import 'common.scss';
+@import 'price-card.scss';
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  color: $text-white-color;
+}
