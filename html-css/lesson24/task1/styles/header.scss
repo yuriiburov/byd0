@@ -36,7 +36,7 @@
     border: none;
     border-left: 1px solid #00000026;
     background-color: #fff;
-    margin-left: auto;
+    margin-right: auto;
 
     @include for-large-up {
       display: none;
@@ -103,6 +103,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 74px;
+
+    @include for-large-up {
+      padding-right: 0;
+    }
   }
 
   &__name {

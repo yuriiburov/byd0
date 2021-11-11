@@ -58,10 +58,12 @@
   &__buttons {
     display: flex;
     flex-direction: column;
+    width: 290px;
+    margin: auto;
 
     @include for-large-up {
       flex-direction: row;
-      margin: auto;
+      width: auto;
     }
   }
 
