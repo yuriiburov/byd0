@@ -699,7 +699,7 @@
   .order__img {
     width: 269.41px;
     margin-right: 121.59px;
-    margin-left: 224px;
+    margin-left: 222px;
     height: 296px;
   }
 }
@@ -719,7 +719,7 @@
 @media screen and (min-width: 1400px) {
   .order__title {
     text-align: start;
-    margin-top: 33px;
+    margin-top: 30px;
     margin-bottom: 12px;
     height: 48px;
   }
@@ -733,7 +733,7 @@
 @media screen and (min-width: 1400px) {
   .order__text {
     height: auto;
-    font-size: 26px;
+    letter-spacing: 1px;
   }
 }
 @media screen and (min-width: 1400px) {
