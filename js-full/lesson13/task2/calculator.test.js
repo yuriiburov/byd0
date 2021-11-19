@@ -1,4 +1,5 @@
-import getSum, { getSquaredNumbers, getOddNumbers } from './calculator';
+/* eslint-disable import/named */
+import getSum, { getSquaredNumbers, getOddNumbers } from './calculator.js';
 
 it('should squared numbers', () => {
   const result = getSquaredNumbers([1, 2, 3]);
