@@ -1,49 +1,12 @@
-// const callbackPrompt = {
-//   message: 'Tell me your number',
-//   showPrompt() {
-//     const phoneNumber = prompt(this.message);
-//     console.log(phoneNumber);
-//   },
-//   showDeferredPrompt(ms) {
-//     setTimeout(this.showPrompt.bind(this), ms);
-//   },
-// };
+// create array with that keys: firstName, lastName
+// create function in oject. This function return in console firstName and lastName together
 
-// // callbackPrompt.showPrompt();
-// callbackPrompt.showDeferredPrompt(2000);
-
-//
-
-// function defer(func, ms) {
-//   return function () {
-//     setTimeout(func, ms);
-//   };
-// }
-
-//
-
-// const user = {
-//   name: 'Doe',
-//   sayHi(age, message) {
-//     console.log(`${message}. I'm ${this.name}. I'm ${age} years old.`);
-//   },
-// };
-
-// const func = user.sayHi;
-
-// const anotherUser = {
-//   name: 'Tom',
-// };
-
-// func.call(anotherUser, 17, 'Hello');
-
-const callbackPrompt = {
-  message: 'Tell me your number',
-  showPrompt() {
-    const phoneNumber = prompt(this.message);
-    console.log(phoneNumber);
+const user = {
+  firstName: 'John',
+  lastName: 'Doe',
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
   },
-  showDeferredPrompt() {},
 };
 
-callbackPrompt.showPrompt();
+console.log(user.getFullName());
