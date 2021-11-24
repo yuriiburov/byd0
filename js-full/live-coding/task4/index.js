@@ -5,7 +5,7 @@ const numbersList = [1, 2, 3, 4, 5];
 
 const numbersList4 = [1, 2, 3, 4, 5];
 
-console.log(numbersList4.filter());
+// console.log(numbersList4.filter());
 
 // input: num, num, func;
 // output: undefined;
@@ -35,11 +35,6 @@ const anotherNumbersList = [5, 0, 8, 10, -4, 50, 220];
 
 // input: num;
 // output: boolean;
-const filterRes = anotherNumbersList.filter((num) => {
-  if (num > 5) {
-    return true;
-  }
-  return false;
-});
 
-console.log(filterRes);
+// test data
+console.log(anotherNumbersList.filter((num) => num > 5));
