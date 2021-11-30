@@ -1,4 +1,4 @@
-export function setTitle(text) {
+function setTitle(text) {
   document.querySelector('.title').textContent = text;
 }
 
