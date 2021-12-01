@@ -11,21 +11,10 @@ function compareObjects(obj1, obj2) {
   const keys1 = Object.keys(obj1);
   const keys2 = Object.keys(obj2);
 
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < keys1.length; i += 1) {
-    const prop = keys1[i];
-
-    if (obj1[prop] !== obj2[prop]) {
-      return false;
-    }
-  }
-
-  return true;
+  return keys1.length === keys2.length
+    ? keys1.every((el) => obj1[el] === obj2[el])
+    : false;
 }
-
 // examples
 const obj1 = {
   name: 'Tom',
