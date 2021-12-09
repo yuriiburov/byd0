@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson27 task2</title>
+    <!-- this styles has location here, cause they small and i think in this moment that's true decision and we are not creating css file   -->
+    <style>
+      .page {
+        display: flex;
+        height: 100vh;
+      }
+
+      .counter {
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="counter">
+        <button data-action="decrease" class="counter__button">-</button>
+        <span class="counter__value">0</span>
+        <button data-action="increase" class="counter__button">+</button>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
