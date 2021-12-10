@@ -1,4 +1,4 @@
-const shoment = (date) => {
+export const shoment = (date) => {
   const newDate = new Date(date.getTime());
   return {
     add(value, number) {
