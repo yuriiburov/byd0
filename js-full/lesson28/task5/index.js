@@ -4,6 +4,8 @@ export const shoment = (date) => {
     add(value, number) {
       if (value === 'years') {
         newDate.setFullYear(newDate.getFullYear() + number);
+      } else if (value === 'months') {
+        newDate.setMonth(newDate.getMonth() + number);
       } else if (value === 'days') {
         newDate.setDate(newDate.getDate() + number);
       } else if (value === 'hours') {
