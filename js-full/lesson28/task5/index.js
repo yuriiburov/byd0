@@ -1,4 +1,4 @@
-export const shoment = (date) => {
+export const shmoment = (date) => {
   const newDate = new Date(date.getTime());
   return {
     add(value, number) {
@@ -22,6 +22,8 @@ export const shoment = (date) => {
     subtract(value, number) {
       if (value === 'years') {
         newDate.setFullYear(newDate.getFullYear() - number);
+      } else if (value === 'months') {
+        newDate.setMonth(newDate.getMonth() - number);
       } else if (value === 'days') {
         newDate.setDate(newDate.getDate() - number);
       } else if (value === 'hours') {
@@ -42,7 +44,7 @@ export const shoment = (date) => {
 };
 
 // console.log(shoment(new Date()));
-const result = shoment(new Date(2020, 0, 7, 17, 17, 17))
+const result = shmoment(new Date(2020, 0, 7, 17, 17, 17))
   .add('minutes', 2)
   .add('days', 8)
   .subtract('years', 1)
