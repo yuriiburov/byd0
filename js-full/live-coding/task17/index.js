@@ -45,12 +45,17 @@ renderTasks(tasks);
 function updateTaskHandler(e) {
   console.dir(e.target.classList.contains('list__item-checkbox'));
   console.dir(e.target.getAttribute('type'));
+  const elemId = e.target.dataset.id;
 
   if (!e.target.classList.contains('list__item-checkbox')) {
     return;
   }
-
-  const { id } = e.target.dataset;
+  if (tasks.find((task) => Number(task.id) === Number(elemId)).done) {
+    tasks.find((task) => Number(task.id) === Number(elemId)).done = false;
+  } else {
+    tasks.find((task) => Number(task.id) === Number(elemId)).done = true;
+  }
+  renderTasks(tasks);
 }
 
 listElem.addEventListener('click', updateTaskHandler);
