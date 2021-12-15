@@ -53,6 +53,12 @@ function updateTaskHandler(e) {
   } else {
     tasks.find((task) => task.id === Number(elemId)).done = true;
   }
+
+  // let variable = null;
+  // variable = tasks.find((task) => task.id === Number(elemId)).done
+  //   ? (tasks.find((task) => task.id === Number(elemId)).done = false)
+  //   : (tasks.find((task) => task.id === Number(elemId)).done = true);
+
   renderTasks(tasks);
 }
 
