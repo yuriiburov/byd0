@@ -8,6 +8,8 @@ const tasks = [
   { id: 5, text: 'Buy meat', done: true },
 ];
 
+console.log(typeof tasks[1].id);
+
 const renderTasks = (tasksList) => {
   listElem.innerHTML = '';
 
@@ -43,17 +45,16 @@ renderTasks(tasks);
 // update task
 // re-render
 function updateTaskHandler(e) {
-  console.dir(e.target.classList.contains('list__item-checkbox'));
-  console.dir(e.target.getAttribute('type'));
   const elemId = e.target.dataset.id;
+  console.log(typeof elemId);
 
   if (!e.target.classList.contains('list__item-checkbox')) {
     return;
   }
-  if (tasks.find((task) => Number(task.id) === Number(elemId)).done) {
-    tasks.find((task) => Number(task.id) === Number(elemId)).done = false;
+  if (tasks.find((task) => task.id === Number(elemId)).done) {
+    tasks.find((task) => task.id === Number(elemId)).done = false;
   } else {
-    tasks.find((task) => Number(task.id) === Number(elemId)).done = true;
+    tasks.find((task) => task.id === Number(elemId)).done = true;
   }
   renderTasks(tasks);
 }
