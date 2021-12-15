@@ -8,8 +8,6 @@ const tasks = [
   { id: 5, text: 'Buy meat', done: true },
 ];
 
-console.log(typeof tasks[1].id);
-
 const renderTasks = (tasksList) => {
   listElem.innerHTML = '';
 
@@ -46,7 +44,6 @@ renderTasks(tasks);
 // re-render
 function updateTaskHandler(e) {
   const elemId = e.target.dataset.id;
-  console.log(typeof elemId);
 
   if (!e.target.classList.contains('list__item-checkbox')) {
     return;
