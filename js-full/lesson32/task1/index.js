@@ -16,10 +16,10 @@ const getSum = (numbers) =>
     .reduce((acc, num) => acc + Number(num), 0);
 
 const asyncSum = (...asyncNumbers) =>
-  Promise.allSettled(asyncNumbers)
+  Promise.all(asyncNumbers)
     .then((numbers) => getSum(numbers))
     .catch(() => Promise.reject(new Error(`Can't calculate`)));
 
-asyncSum(asyncNum1, Promise.reject(new Error('err')), asyncNum3)
+asyncSum(asyncNum1, asyncNum2, asyncNum3)
   .then((result) => console.log(result))
   .catch((error) => console.log(error));

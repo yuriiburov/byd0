@@ -12,15 +12,15 @@ const request = (url) =>
     setTimeout(() => {
       resolve({
         userData: {
-          name: 'Bill',
-          age: 33,
+          name: 'Tom',
+          age: 17,
         },
         source: url,
       });
     }, randomDelay);
   });
 
-const getUserASAP = (userId) => {
+export const getUserASAP = (userId) => {
   const userUrls = servers.map((serverUrl) => `${serverUrl}/users/${userId}`);
   const requests = userUrls.map((userUrl) => request(userUrl));
   return Promise.race(requests);
