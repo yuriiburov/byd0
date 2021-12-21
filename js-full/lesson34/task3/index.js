@@ -32,7 +32,10 @@ const userData = (formData) =>
  */
 const onCreateUser = (e) => {
   e.preventDefault();
-  const formData = Object.fromEntries(new FormData(loginForm));
+  const formData = [...new FormData(loginForm)].reduce(
+    (acc, [prop, value]) => ({ ...acc, [prop]: value }),
+    {}
+  );
   userData(formData)
     .then((response) => response.json())
     .then((dataOfUser) => {

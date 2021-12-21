@@ -1,18 +1,8 @@
-import { getItem } from './storage.js';
+import { getTasksList } from './taskGateway.js';
 
 const listElem = document.querySelector('.list');
 
-const compareTasks = (a, b) => {
-  if (a.done - b.done !== 0) {
-    return a.done - b.done;
-  }
-
-  if (a.done) {
-    return new Date(b.finishDate) - new Date(a); // =================================================
-  }
-
-  return new Date(b.createDate) - new Date(a.createDate);
-};
+const compareTasks = (a, b) => a.done - b.done;
 
 const createCheckbox = ({ done, id }) => {
   const checkboxElem = document.createElement('input');
@@ -29,7 +19,7 @@ const createListItem = ({ text, done, id }) => {
   listItemElement.classList.add('list-item', 'list__item');
   const checkboxElem = createCheckbox({ done, id });
 
-  if (done) {
+  if (!done) {
     listItemElement.classList.add('list-item_done');
   }
 
@@ -46,9 +36,10 @@ const createListItem = ({ text, done, id }) => {
 };
 
 export const renderTasks = () => {
-  const tasksList = getItem('tasksList') || [];
+  const tasksList = getTasksList();
 
   listElem.innerHTML = '';
-  const tasksElems = tasksList.sort(compareTasks).map(createListItem);
-  listElem.append(...tasksElems);
+  tasksList
+    .then((elem) => elem.sort(compareTasks).map(createListItem))
+    .then((elem) => listElem.append(...elem));
 };
