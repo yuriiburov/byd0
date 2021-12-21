@@ -26,5 +26,5 @@ const onCreateUser = (e) => {
   submitButton.disabled = true;
 };
 
-submitButton.addEventListener('keyup', onCreateUser);
+loginForm.addEventListener('submit', onCreateUser);
 loginForm.addEventListener('input', onValidForm);
